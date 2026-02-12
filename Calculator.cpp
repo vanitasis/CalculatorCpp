@@ -5,9 +5,9 @@
 
 using namespace std ;
 
-int main() {
+void PenjumlahanStandar() {
 
-    double num1, num2;
+     double num1, num2;
     int select ;
     
     while (true)
@@ -78,4 +78,142 @@ int main() {
 
 }
 
+}
+
+void PenjumlahanTambahan() {
+
+     double num1, num2;
+    int select ;
+    
+    while (true)
+    {
+    cout << left ;
+    cout << " pilih operasi" << endl;
+    cout << "========================" << endl;
+    cout << " 1. akar kuadrat" << endl;
+    cout << " 2. eksponensial" << endl;
+    cout << " 3. logaritma" << endl;
+    cout << " 4. sin" << endl;
+    cout << " 5. cos" << endl;
+    cout << " 6. tan" << endl;
+    cout << " 7. Kembali" << endl;
+    cout << " 8. Keluar" << endl;
+    cout << "========================" << endl;
+
+    cout << "masukan pilihan :" ;
+    cin >> select ;
+    cout << "========================" << endl;
+
+    if (select == 7)
+    {
+        continue;
+    }
+    
+    switch (select)
+    {
+    case 1:
+
+        cout << "masukan bilangan :" ;
+        cin >> num1;
+        
+        cout << "hasil dari akar kuadrat bilangan tersebut :" << sqrt(num1) <<endl;
+        cout << "========================" << endl;
+        break;
+
+    case 2:
+
+        cout << "masukan bilangan :" ;
+        cin >> num1;
+        cout << "masukan bilangan eksponen : ";
+        cin >> num2 ;
+        
+        cout << "hasil dari eksponensial bilangan tersebut :" << pow(num1, num2) <<endl;
+        cout << "========================" << endl;
+        break;
+
+    case 3:
+
+        cout << "masukan bilangan pertama :" ;
+        cin >> num1;
+        
+        cout << "hasil dari logaritma bilangan tersebut :" << log(num1) <<endl;
+        cout << "========================" << endl;
+        break;
+
+    case 4:
+        cout << "masukan sin :" ;
+        cin >> num1;
+        
+        cout << "hasil dari sin bilangan tersebut :" << num1 << sin(num1) <<endl;
+        cout << "========================" << endl;
+        break;
+
+     case 5:
+        cout << "masukan cos :" ;
+        cin >> num1;
+        
+        cout << "hasil dari cos bilangan tersebut :" << num1 << cos(num1) <<endl;
+        cout << "========================" << endl;
+        break;
+
+     case 6:
+        cout << "masukan tan :" ;
+        cin >> num1;
+        
+        cout << "hasil dari tan bilangan tersebut :" << num1 << tan(num1) <<endl;
+        cout << "========================" << endl;
+        break;
+    
+
+    case 8:
+
+        system("clear");
+        break;
+
+    default:
+        
+        cout << "pilihan tidak valid" ;
+        break;
+    }
+
+}
+
+
+}
+
+
+int main() {
+
+    int select;
+
+    cout << left;
+    cout << "=============================" << endl;
+    cout << "pilih operasi" << endl;
+    cout << "=============================" << endl;
+    cout << "1. operasi standar : " << endl;
+    cout << "2. operasi lanjutan : " << endl;
+    cout << "3. kembali" << endl ;
+    cout << "=============================" << endl;
+    cout << "masukan pilihan : " << endl;
+    cin >> select ;
+
+    if (select == 1)
+    {
+        PenjumlahanStandar();
+    }else if (select == 2)
+    {
+        PenjumlahanTambahan();}
+    else if (select == 3)
+    {
+        system("clear");
+    }else {
+        
+        cout << "input tidak valid" ;
+
+    }
+
+    return 0 ;
+    
+    
+   
 }
