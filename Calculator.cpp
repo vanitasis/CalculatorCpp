@@ -37,9 +37,6 @@ int main() {
         break;
     }
     
-
-    
-
     switch (select)
     {
     case 1:
