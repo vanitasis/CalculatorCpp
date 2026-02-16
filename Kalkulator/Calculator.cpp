@@ -5,6 +5,32 @@
 
 using namespace std ;
 
+void Opening() {
+
+    cout << left ;
+    cout << "  ------------------------------------" << endl;
+    cout << "----------------------------------------" << endl;
+    cout << "||    kkkkk    aaa    ll       kkkk   ||" << endl ;
+    cout << "||   kk       aa  aa  ll     kk       ||" << endl ;
+    cout << "||   kk       aaaaaa  ll     kk       ||" << endl ;
+    cout << "||    kkkkk   aa  aa  llllll   kkkk   ||" << endl ;
+    cout << "----------------------------------------" << endl;
+    cout << "  ------------------------------------" << endl;
+    cout << "                                          " << endl ;
+    cout << "==========================================" << endl ;
+   
+    int select;
+
+    cout << "CHOSE OPERATION : " << endl ;
+    cout << "=============================" << endl;
+    cout << "1. operasi standar : " << endl;
+    cout << "2. operasi lanjutan : " << endl;
+    cout << "3. kembali" << endl ;
+    cout << "=============================" << endl;
+    
+
+}
+
 void PenjumlahanStandar() {
 
      double num1, num2;
@@ -186,14 +212,9 @@ int main() {
 
     int select;
 
-    cout << left;
-    cout << "=============================" << endl;
-    cout << "pilih operasi" << endl;
-    cout << "=============================" << endl;
-    cout << "1. operasi standar : " << endl;
-    cout << "2. operasi lanjutan : " << endl;
-    cout << "3. kembali" << endl ;
-    cout << "=============================" << endl;
+    Opening() ;
+
+   
     cout << "masukan pilihan : " << endl;
     cin >> select ;
 
