@@ -23,9 +23,9 @@ void Opening() {
 
     cout << "CHOSE OPERATION : " << endl ;
     cout << "=============================" << endl;
-    cout << "1. operasi standar : " << endl;
-    cout << "2. operasi lanjutan : " << endl;
-    cout << "3. kembali" << endl ;
+    cout << "1. Standard operation : " << endl;
+    cout << "2. Advance operation : " << endl;
+    cout << "3. back" << endl ;
     cout << "=============================" << endl;
     
 
