@@ -33,7 +33,7 @@ void Opening() {
 
 void PenjumlahanStandar() {
 
-     double num1, num2;
+    double num1, num2;
     int select ;
     
     while (true)
@@ -98,7 +98,7 @@ void PenjumlahanStandar() {
 
     default:
         
-        cout << "pilihan tidak valid" ;
+        cout << "invalid operation" ;
         break;
     }
 
@@ -198,7 +198,7 @@ void PenjumlahanTambahan() {
 
     default:
         
-        cout << "pilihan tidak valid" ;
+        cout << "invalid operation" ;
         break;
     }
 
